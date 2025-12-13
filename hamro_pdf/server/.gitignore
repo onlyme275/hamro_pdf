@@ -1,0 +1,27 @@
+# dependencies
+/node_modules
+# ignoring the .env so that
+.env
+# server
+server/.env
+# client
+client/.env
+client/.env.local           
+client/.env.development.local
+client/.env.test.local
+client/.env.production.local
+# api
+api/.env
+api/.env.local
+api/.env.development.local
+api/.env.test.local
+api/.env.production.local
+# web
+web/.env
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
