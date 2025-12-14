@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const HeroCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -9,12 +10,14 @@ const HeroCarousel = () => {
       title: "Compress your PDF files in seconds",
       description: "Fast, secure and completely free PDF compression. Perfect for students, professionals, and businesses across Nepal.",
       buttonText: "Compress now",
+      buttonLink: "/compress",
       image: "https://republicaimg.nagariknewscdn.com/shared/web/uploads/media/Prime-College-BSc-CSIT_20190912105905.jpg"
     },
     {
       title: "Merge multiple PDFs into one",
       description: "Combine PDF files easily for your projects, reports, or documents. Made for Nepal, works everywhere.",
       buttonText: "Merge now",
+      buttonLink: "/merge",
       image: "https://oed.com.ph/wp-content/uploads/2023/04/shutterstock_2150253841-1-1.png"
     }
   ];
@@ -29,7 +32,7 @@ const HeroCarousel = () => {
 
   // Christmas Animation Component - Falling Snowflakes
   const FallingSnowflake = ({ delay, duration, left }) => (
-    <div 
+    <div
       className="absolute animate-fall-snow opacity-80"
       style={{
         left: `${left}%`,
@@ -43,7 +46,7 @@ const HeroCarousel = () => {
 
   // Ornament Component
   const FloatingOrnament = ({ delay, duration, left, emoji }) => (
-    <div 
+    <div
       className="absolute animate-float-ornament opacity-70"
       style={{
         left: `${left}%`,
@@ -59,7 +62,7 @@ const HeroCarousel = () => {
   const SnowflakePattern = () => (
     <div className="absolute opacity-20 animate-spin-slow">
       <svg width="80" height="80" viewBox="0 0 100 100" className="text-blue-400">
-        <circle cx="50" cy="50" r="5" fill="currentColor"/>
+        <circle cx="50" cy="50" r="5" fill="currentColor" />
         {[0, 60, 120, 180, 240, 300].map((angle) => (
           <g key={angle}>
             <line
@@ -94,7 +97,7 @@ const HeroCarousel = () => {
 
   // Twinkling Stars
   const TwinklingStar = ({ delay, top, left, size }) => (
-    <div 
+    <div
       className="absolute animate-twinkle"
       style={{
         top: `${top}%`,
@@ -120,14 +123,14 @@ const HeroCarousel = () => {
         <FallingSnowflake delay={1} duration={9.5} left={70} />
         <FallingSnowflake delay={3.5} duration={8} left={80} />
         <FallingSnowflake delay={2.5} duration={11} left={90} />
-        
+
         {/* Floating Christmas Ornaments */}
         <FloatingOrnament delay={0} duration={6} left={15} emoji="🎄" />
         <FloatingOrnament delay={2} duration={7} left={35} emoji="🎁" />
         <FloatingOrnament delay={4} duration={6.5} left={55} emoji="🔔" />
         <FloatingOrnament delay={1} duration={7.5} left={75} emoji="⛄" />
         <FloatingOrnament delay={3} duration={6} left={85} emoji="🎅" />
-        
+
         {/* Snowflake Patterns */}
         <div className="absolute top-10 left-10">
           <SnowflakePattern />
@@ -178,11 +181,12 @@ const HeroCarousel = () => {
             <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-8 max-w-lg mx-auto lg:mx-0">
               {heroSlides[currentSlide].description}
             </p>
-            <button
+            <Link
+              to={heroSlides[currentSlide].buttonLink}
               className="inline-block bg-gradient-to-r from-red-600 to-green-600 hover:from-red-700 hover:to-green-700 dark:from-red-600 dark:to-green-600 dark:hover:from-red-700 dark:hover:to-green-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-200 transform hover:-translate-y-0.5 hover:shadow-2xl shadow-lg"
             >
               {heroSlides[currentSlide].buttonText}
-            </button>
+            </Link>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400">
               ✓ 100% Free • ✓ No Registration • ✓ Fast & Secure
             </p>
@@ -235,11 +239,12 @@ const HeroCarousel = () => {
             <p className="text-lg text-gray-700 dark:text-gray-300 mb-4">
               Login to save your important PDFs and signatures for free.
             </p>
-            <button
+            <Link
+              to="/register"
               className="inline-block bg-gradient-to-r from-red-600 to-green-600 hover:from-red-700 hover:to-green-700 dark:from-red-600 dark:to-green-600 dark:hover:from-red-700 dark:hover:to-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-all duration-200 transform hover:-translate-y-0.5 hover:shadow-lg"
             >
               Create Free Account
-            </button>
+            </Link>
           </div>
         </div>
       </div>
