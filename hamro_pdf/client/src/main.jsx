@@ -40,6 +40,7 @@ import Business from "./pages/Business.jsx";
 import AdsManagement from "./pages/admin/AdsManagement.jsx";
 import PdfEditor from "./pages/EditPdf.jsx";
 import PDFRepairTool from "./pages/PdfRepair.jsx";
+import DateConverter from "./pages/DateConverter.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -57,6 +58,7 @@ createRoot(document.getElementById("root")).render(
               {/* Contact */}
               <Route path="/contact" element={<Contact />} />
               <Route path="/oauth/callback" element={<OAuthCallback />} />
+              <Route path="/dateconverter" element={<DateConverter />} />
               {/* Auth */}
               <Route
                 path="/dashboard/admin/splash"

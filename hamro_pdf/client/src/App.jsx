@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage.jsx";
 import Register from "./pages/Register.jsx";
+import DateConverter from "./pages/DateConverter.jsx";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./index.css";
@@ -17,7 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/register" element={<Register />} />
-            
+            <Route path="/date-converter" element={<DateConverter />} />
+
           </Routes>
         </main>
 

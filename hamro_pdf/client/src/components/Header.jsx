@@ -33,6 +33,7 @@ const Header = () => {
     { name: "Convert PDF", to: "/convert" },
     { name: "Split PDF", to: "/split" },
     { name: "Pricing", to: "/pricing" },
+    { name: "DateConverter", to: "/dateconverter"},
     { name: "Contact", to: "/contact" },
   ];
 
