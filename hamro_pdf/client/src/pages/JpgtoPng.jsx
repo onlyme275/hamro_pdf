@@ -163,10 +163,10 @@ export default function JpgToPngPage() {
                 <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
                     <div
                         className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors ${dragOver
-                                ? "border-blue-400 bg-blue-50"
-                                : selectedFiles.length > 0
-                                    ? "border-green-300 bg-green-50"
-                                    : "border-gray-300 hover:border-blue-400 hover:bg-blue-50"
+                            ? "border-blue-400 bg-blue-50"
+                            : selectedFiles.length > 0
+                                ? "border-green-300 bg-green-50"
+                                : "border-gray-300 hover:border-blue-400 hover:bg-blue-50"
                             }`}
                         onDrop={handleDrop}
                         onDragOver={handleDragOver}
