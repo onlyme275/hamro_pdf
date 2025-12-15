@@ -244,6 +244,22 @@ const ToolsGridSection = () => {
       description: "Compare two versions of documents side by side",
       category: ["All", "Workflow"],
       href: "/compare"
+    },
+    {
+      id: 25,
+      icon: "🖼️",
+      title: "JPG to PNG",
+      description: "Convert JPG images to PNG format instantly",
+      category: ["All", "Convert PDF"],
+      href: "/jpg-to-png"
+    },
+    {
+      id: 26,
+      icon: "🖼️",
+      title: "PNG to JPG",
+      description: "Convert PNG images to JPG format instantly",
+      category: ["All", "Convert PDF"],
+      href: "/png-to-jpg"
     }
   ];
 
@@ -267,14 +283,14 @@ const ToolsGridSection = () => {
       title: "Sagarmatha Diagnostics",
       description: "Comprehensive health check-up packages at affordable prices",
       badge: "Health",
-      image:"https://www.bellarmine.edu/sf-images/default-source/admitted-students/mls.jpg?sfvrsn=5a027880_3",
+      image: "https://www.bellarmine.edu/sf-images/default-source/admitted-students/mls.jpg?sfvrsn=5a027880_3",
       link: "#"
     },
     {
       title: "Nexus Collection",
       description: "Beauty and Fashion Accessories.",
       badge: "Shopping",
-      image:"https://enexuscollection.com/uploads/logo-1757743360238-825628689.jpg",
+      image: "https://enexuscollection.com/uploads/logo-1757743360238-825628689.jpg",
       link: "#"
     }
   ];
@@ -298,7 +314,7 @@ const ToolsGridSection = () => {
       title: "Padmashree International College",
       description: "Best I.T College in Nepal",
       badge: "BIT",
-      image:"https://images.unsplash.com/photo-1562774053-701939374585?w=500",
+      image: "https://images.unsplash.com/photo-1562774053-701939374585?w=500",
       link: "#"
     },
     {
@@ -306,12 +322,12 @@ const ToolsGridSection = () => {
       description: "Leading legal services in Nepal",
       badge: "Legal",
       link: "#",
-      image:"https://www.totallylegal.com/getasset/c3ee2a89-b973-445f-9337-1ca05736c950/"
+      image: "https://www.totallylegal.com/getasset/c3ee2a89-b973-445f-9337-1ca05736c950/"
     }
   ];
 
-  const filteredTools = activeCategory === "All" 
-    ? tools 
+  const filteredTools = activeCategory === "All"
+    ? tools
     : tools.filter(tool => tool.category.includes(activeCategory));
 
   return (
@@ -333,11 +349,10 @@ const ToolsGridSection = () => {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${
-                activeCategory === category
+              className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all ${activeCategory === category
                   ? "bg-blue-600 dark:bg-blue-600 text-white shadow-md"
                   : "bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 border border-gray-300 dark:border-gray-600"
-              }`}
+                }`}
             >
               {category}
             </button>
@@ -369,17 +384,17 @@ const ToolsGridSection = () => {
                     <div className="w-16 h-16 bg-gradient-to-br from-blue-50 to-red-50 dark:from-gray-700 dark:to-gray-600 rounded-xl flex items-center justify-center mb-4 group-hover:from-blue-100 group-hover:to-red-100 dark:group-hover:from-gray-600 dark:group-hover:to-gray-500 transition-all">
                       <span className="text-3xl">{tool.icon}</span>
                     </div>
-                    
+
                     {/* Title */}
                     <h3 className="font-semibold text-gray-900 dark:text-white mb-2 text-sm">
                       {tool.title}
                     </h3>
-                    
+
                     {/* Description */}
                     <p className="text-xs text-gray-600 dark:text-gray-400 mb-3 flex-grow">
                       {tool.description}
                     </p>
-                    
+
                     {/* Read More Link */}
                     <span className="text-xs text-blue-600 dark:text-blue-400 hover:text-blue-700 dark:hover:text-blue-300 font-medium">
                       Use tool →

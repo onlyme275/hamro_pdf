@@ -18,6 +18,8 @@ import ExcelToPdf from "./pages/ExcelToPdf";
 import PdftoPpt from "./pages/PdftoPpt";
 import PdfToJpg from "./pages/PdfToJpg";
 import JpgToPdf from "./pages/JpgToPdf";
+import JpgtoPng from "./pages/JpgtoPng";
+import PngtoJpg from "./pages/PngtoJpg";
 import RotatePdf from "./pages/RotatePdf";
 import WatermarkPdf from "./pages/WatermarkPdf";
 import ProtectPdf from "./pages/ProtectPdf";
@@ -90,6 +92,8 @@ createRoot(document.getElementById("root")).render(
               <Route path="/pdf-to-ppt" element={<PdftoPpt />} />
               <Route path="/pdf-to-jpg" element={<PdfToJpg />} />
               <Route path="/jpg-to-pdf" element={<JpgToPdf />} />
+              <Route path="/jpg-to-png" element={<JpgtoPng />} />
+              <Route path="/png-to-jpg" element={<PngtoJpg />} />
               <Route path="/rotate" element={<RotatePdf />} />
               <Route path="/watermark" element={<WatermarkPdf />} />
               <Route path="/protect" element={<ProtectPdf />} />
