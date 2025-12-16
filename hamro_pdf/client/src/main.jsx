@@ -35,6 +35,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Providers from "./components/Providers";
 import OAuthCallback from "./pages/OAuthCallback.jsx"; // Adjust the path based on where you saved it
+import ProtectedRoute from "./components/ProtectedRoute";
+
 import Contact from "./pages/Contact.jsx";
 import SplashAdminPage from "./pages/SplashAdminPage";
 import Education from "./pages/Education.jsx";
@@ -72,13 +74,15 @@ createRoot(document.getElementById("root")).render(
               <Route path="/register" element={<Register />} />
 
               {/* User Dashboards */}
-              <Route path="/dashboard" element={<Dashboard />} />
-              <Route
-                path="/premium-dashboard"
-                element={<PremiumUserDashboard />}
-              />
-              <Route path="/dashboard/admin" element={<AdminDashboard />} />
-              <Route path="/dashboard/admin/ads" element={<AdsManagement />} />
+              <Route element={<ProtectedRoute />}>
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route
+                  path="/premium-dashboard"
+                  element={<PremiumUserDashboard />}
+                />
+                <Route path="/dashboard/admin" element={<AdminDashboard />} />
+                <Route path="/dashboard/admin/ads" element={<AdsManagement />} />
+              </Route>
 
               {/* PDF Tools */}
               <Route path="/edit" element={<PdfEditor />} />
