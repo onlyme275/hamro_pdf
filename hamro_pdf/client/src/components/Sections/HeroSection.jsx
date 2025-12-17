@@ -281,28 +281,28 @@ const HeroSection = () => {
       description: "For all your tech needs, visit Quantum Tech in Kathmandu",
       badge: "PRO",
       image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      link: "#"
+      link: "https://erp.hamropdf.com/"
     },
     {
       title: "Organic Fiber Store",
       description: "Sustainable and eco-friendly hemp-fabrics for your fashion needs",
       badge: "Hemp",
       image: "https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      link: "#"
+      link: "https://orgfiber.com/"
     },
     {
       title: "Sagarmatha Diagnostics",
       description: "Comprehensive health check-up packages at affordable prices",
       badge: "Health",
       image: "https://www.bellarmine.edu/sf-images/default-source/admitted-students/mls.jpg?sfvrsn=5a027880_3",
-      link: "#"
+      link: "https://www.bellarmine.edu"
     },
     {
       title: "Nexus Collection",
       description: "Beaty and Fashion Accessories.",
       badge: "Shopping",
       image: "https://enexuscollection.com/uploads/logo-1757743360238-825628689.jpg",
-      link: "#"
+      link: "https://enexuscollection.com/"
     }
   ];
 
@@ -319,7 +319,7 @@ const HeroSection = () => {
       description: "Luxury Ride Sharing in Nepal",
       buttonText: "Get Started",
       image: "https://www.netsolutions.com/wp-content/uploads/2024/12/How-to-Build-a-Ride-Sharing-App-from-Scratch_.webp",
-      link: "#"
+      link: "https://www.netsolutions.com"
     },
     {
       title: "Padmashree International College",
@@ -332,7 +332,7 @@ const HeroSection = () => {
       title: "Baskota Advocates",
       description: "Leading legal services in Nepal",
       badge: "legal",
-      link: "#",
+      link: "https://www.totallylegal.com/",
       image: "https://www.totallylegal.com/getasset/c3ee2a89-b973-445f-9337-1ca05736c950/"
     }
   ];

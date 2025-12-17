@@ -260,6 +260,22 @@ const ToolsGridSection = () => {
       description: "Convert PNG images to JPG format instantly",
       category: ["All", "Convert PDF"],
       href: "/png-to-jpg"
+    },
+    {
+      id:27,
+      icon:"👁️",
+      title:"preeti to unicode",
+      description:"convert preeti to unicode",
+      category:["All",""],
+      href:"/preeti-to-unicode"
+    },
+    {
+      id:28,
+      icon:"👁️",
+      title:"unicode to preeti",
+      description:"convert unicode to preeti",
+      category:["All",""],
+      href:"/unicode-to-preeti"
     }
   ];
 

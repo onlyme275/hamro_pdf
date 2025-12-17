@@ -37,6 +37,9 @@ import Providers from "./components/Providers";
 import OAuthCallback from "./pages/OAuthCallback.jsx"; // Adjust the path based on where you saved it
 import ProtectedRoute from "./components/ProtectedRoute";
 
+import PreetitoUnicode from "./pages/PreetitoUnicode.jsx";
+import Unicodetopreeti from "./pages/Unicodetopreeti.jsx";
+
 import Contact from "./pages/Contact.jsx";
 import SplashAdminPage from "./pages/SplashAdminPage";
 import Education from "./pages/Education.jsx";
@@ -45,6 +48,7 @@ import AdsManagement from "./pages/admin/AdsManagement.jsx";
 import PdfEditor from "./pages/EditPdf.jsx";
 import PDFRepairTool from "./pages/PdfRepair.jsx";
 import DateConverter from "./pages/DateConverter.jsx";
+
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -83,6 +87,9 @@ createRoot(document.getElementById("root")).render(
                 <Route path="/dashboard/admin" element={<AdminDashboard />} />
                 <Route path="/dashboard/admin/ads" element={<AdsManagement />} />
               </Route>
+
+              <Route path="/preeti-to-unicode" element={<PreetitoUnicode />} />
+              <Route path="/unicode-to-preeti" element={<Unicodetopreeti />} />
 
               {/* PDF Tools */}
               <Route path="/edit" element={<PdfEditor />} />
