@@ -263,7 +263,7 @@ const ToolsGridSection = () => {
     },
     {
       id:27,
-      icon:"👁️",
+      icon:"📄",
       title:"preeti to unicode",
       description:"convert preeti to unicode",
       category:["All",""],
@@ -271,11 +271,19 @@ const ToolsGridSection = () => {
     },
     {
       id:28,
-      icon:"👁️",
+      icon:"📄",
       title:"unicode to preeti",
       description:"convert unicode to preeti",
       category:["All",""],
       href:"/unicode-to-preeti"
+    },
+    {
+      id:29,
+      icon:"📎",
+      title:"Background Remover",
+      description:"convert backgound remove",
+      category:["All",""],
+      href:"/background-remover"
     }
   ];
 

@@ -39,6 +39,7 @@ import ProtectedRoute from "./components/ProtectedRoute";
 
 import PreetitoUnicode from "./pages/PreetitoUnicode.jsx";
 import Unicodetopreeti from "./pages/Unicodetopreeti.jsx";
+import BackgroundRemover from "./pages/BackgroundRemover.jsx";
 
 import Contact from "./pages/Contact.jsx";
 import SplashAdminPage from "./pages/SplashAdminPage";
@@ -90,6 +91,7 @@ createRoot(document.getElementById("root")).render(
 
               <Route path="/preeti-to-unicode" element={<PreetitoUnicode />} />
               <Route path="/unicode-to-preeti" element={<Unicodetopreeti />} />
+              <Route path="/background-remover" element={<BackgroundRemover />} />
 
               {/* PDF Tools */}
               <Route path="/edit" element={<PdfEditor />} />
